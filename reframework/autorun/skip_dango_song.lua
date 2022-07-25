@@ -46,7 +46,7 @@ local skippedCutsceneThisFrame;
 
 local hpStaminaMessage = "<COL>ステータスが上昇しました！</COL>" ..
                             "\n<COL RED>  体力                         50</COL>" ..
-                            "\n<COL RED>  スタミナ                      50</COL>"
+                            "\n<COL RED>  スタミナ                  50</COL>"
 
 local function printSkills()
     local chatManager = sdk.get_managed_singleton("snow.gui.ChatManager")
