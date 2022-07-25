@@ -44,9 +44,9 @@ local lastEatHandlerStopped;
 local lastMotleyHandlerStopped;
 local skippedCutsceneThisFrame;
 
-local hpStaminaMessage = "<COL>Status Increased!</COL>" ..
-                            "\n<COL RED>  Health                         50</COL>" ..
-                            "\n<COL RED>  Stamina                      50</COL>"
+local hpStaminaMessage = "<COL>ステータスが上昇しました！</COL>" ..
+                            "\n<COL RED>  体力                         50</COL>" ..
+                            "\n<COL RED>  スタミナ                      50</COL>"
 
 local function printSkills()
     local chatManager = sdk.get_managed_singleton("snow.gui.ChatManager")
@@ -54,7 +54,7 @@ local function printSkills()
     local dataShortcut =
         sdk.create_instance("snow.data.DataShortcut", true):add_ref()
 
-    local message = "<COL>Dango Skills activated!</COL>"
+    local message = "<COL>おだんごスキルが発動しました！</COL>"
     local playerSkillData = player:get_field("_refPlayerSkillList")
     playerSkillData = playerSkillData:call("get_KitchenSkillData")
     for i, v in pairs(playerSkillData:get_elements()) do
